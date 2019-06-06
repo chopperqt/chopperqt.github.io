@@ -1,8 +1,11 @@
 .slider {
-  border: 1px solid black;
   display: block;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin: 20px 0 20px 0; }
   .slider .slider-arrow {
     position: relative;
     width: 100%;
