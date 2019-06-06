@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet/tooltip.css">
+    <link rel="stylesheet" href="stylesheet/fonts.css">
+    <link rel="stylesheet" href="stylesheet/footer.css">
+    <link rel="stylesheet" href="stylesheet/default.css">
+    <link rel="stylesheet" href="stylesheet/menuCSS.css">
+    <link rel="stylesheet" href="stylesheet/mobilMenu.css">
+    <link rel="stylesheet" href="stylesheet/cashbox.css">
+    <link rel="stylesheet" href="stylesheet/animation.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet/nprogress.css">
+<!--scripts-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="scripts/nprogress.js"></script>
+    <title>Касса</title>
+</head>
+<body>
+<header id="header">
+    <div class="nav-container f-nav">
+        <div class="nav">
+            <ul>
+                <li><a href="./mainPage.html">Главная</a></li>
+                <li><a href="./news.html">Новости</a></li>
+                <li><a href="./cashbox.html">Касса</a></li>
+                <li><a href="./arts.html">Произведения</a></li>
+                <li><a href="./job.html">Вакансии</a></li>
+                <li><a href="./about.html">О нас </a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="user-menu">
+            <div class="user-avatar" id="close__" onclick="openUserProfil()" >
+                <img src="museums_pictures/User.png" alt="user-avatar">
+                <p><i class="fas fa-angle-down"></i></p>
+            </div>
+            <div class="menu-wrap">
+                <div class="menu">
+                    <ul class="user-menu-items">
+                        <li><a href="cart.html">Моя корзина</a></li>
+                        <li><a href="#">Настройки</a></li>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Выход</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="no-user-menu">
+            <a href="login.html">Войти</a>
+        </div>
+    </div>
+    <div class="mobil_menu">
+        <div class="wrap-menu">
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="./mainPage.html">Главная</a></li>
+                    <li><a href="./news.html">Новости</a></li>
+                    <li><a href="./cashbox.html">Касса</a></li>
+                    <li><a href="./arts.html">Произведения</a></li>
+                    <li><a href="./job.html">Вакансии</a></li>
+                    <li><a href="./about.html">О нас </a></li>
+                </ul>
+            </div>
+            <button class="open-the-menu" id="close" onclick="tranformation_btn()">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </button>
+        </div>
+    </div>
+</header>
+<section id="cashbox">
+    <div class="container">
+        <div class="cashbox-wrap">
+            <div class="cash">
+                <div class="avatar children">
+                    <img src="museums_pictures/child.png" alt="Детский">
+                </div>
+                <div class="cash-text">
+                    <h3>Детский</h3>
+                    <p><span>250руб</span></p>
+                </div>
+                <div class="cash-buttons">
+                    <button id="btn-tooltip" class="tooltip-btn" title="Билет для детей до 14 лет"><i class="fas fa-exclamation"></i></button>
+                    <button id="add-to-cart">Добавить в корзину</button>
+                </div>
+            </div>
+            <div class="cash">
+                <div class="avatar people">
+                    <img src="museums_pictures/man.png" alt="Взрослый">
+                </div>
+                <div class="cash-text">
+                    <h3>Взрослый</h3>
+                    <p><span>250руб</span></p>
+                </div>
+                <div class="cash-buttons">
+                    <button id="btn-tooltip2" class="tooltip-btn" title="Билет на одного взролого человека"><i class="fas fa-exclamation"></i></button>
+                    <button id="add-to-cart">Добавить в корзину</button>
+                </div>
+            </div>
+            <div class="cash">
+                <div class="avatar family">
+                    <img src="museums_pictures/family.png" alt="Семейный">
+                </div>
+                <div class="cash-text">
+                    <h3>Семейный</h3>
+                    <p><span>250руб</span></p>
+                </div>
+                <div class="cash-buttons">
+                    <button id="btn-tooltip3" class="tooltip-btn" title="Включает в себя 2х взрослых и 3х детских"><i class="fas fa-exclamation"></i></button>
+                    <button id="add-to-cart">Добавить в корзину</button>
+                </div>
+            </div>
+            <div class="cash">
+                <div class="avatar family">
+                    <img src="museums_pictures/english.png" alt="">
+                </div>
+                <div class="cash-text">
+                    <h3>Экскурсия на Английском</h3>
+                    <p><span>250руб</span></p>
+                </div>
+                <div class="cash-buttons">
+                    <button id="btn-tooltip4" class="tooltip-btn" title="Эксурсия полностью на английском языке на одного человека(Excursion is completely in English for one person.)"><i class="fas fa-exclamation"></i></button>
+                    <button id="add-to-cart">Добавить в корзину</button>
+                </div>
+            </div>
+            <div class="cash">
+                <div class="avatar family">
+                    <img src="museums_pictures/Deutsch.png" alt="">
+                </div>
+                <div class="cash-text">
+                    <h3>Экскурсия на Немецком</h3>
+                    <p><span>250руб</span></p>
+                </div>
+                <div class="cash-buttons">
+                    <button id="btn-tooltip5" class="tooltip-btn" title="Экскусрия полностью на немецком языке на одного человека"><i class="fas fa-exclamation"></i></button>
+                    <button id="add-to-cart">Добавить в корзину</button>
+                </div>
+            </div>
+            <div class="cash">
+                <div class="avatar family">
+                    <img src="museums_pictures/china2.png" alt="">
+                </div>
+                <div class="cash-text">
+                    <h3>Экскурсия на Китайском</h3>
+                    <p><span>250руб</span></p>
+                </div>
+                <div class="cash-buttons">
+                    <button id="btn-tooltip6" class="tooltip-btn" title="Экскурсия полностью на китайском языке на одного человека"><i class="fas fa-exclamation"></i></button>
+                    <button id="add-to-cart">Добавить в корзину</button>
+                </div>
+            </div>
+            <div class="cash">
+                <div class="avatar aboniment">
+                    <img src="museums_pictures/aboniment.png" alt="">
+                </div>
+                <div class="cash-text">
+                    <h3>Годовой абонимент в музей</h3>
+                    <p><span>3000руб</span></p>
+                </div>
+                <div class="cash-buttons">
+                    <button id="btn-tooltip7" class="tooltip-btn" title="Годовой абонимент позволяет вам приходить в музей когда захотите!"><i class="fas fa-exclamation"></i></button>
+                    <button id="add-to-cart">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer id="footer">
+    <div class="main-container-two">
+        <div class="last-information-about-museum">
+            <ul class="navs">
+                <li><a href="">Help</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Gift Cards</a></li>
+                <li><a href="">Dealers</a></li>
+                <li><a href="">Foundation</a></li>
+            </ul>
+        </div>
+        <div class="last-social-network" id="last-social-network">
+            <ul class="navs">
+                <li><a href=""><i class="fab fa-vk vk"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram inst"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter twit"></i></a></li>
+                <li><a href=""><i class="fas fa-rss rss"></i></a></li>
+                <li><a href=""><i class="fab fa-twitch twitch"></i></a></li>
+            </ul>
+        </div>
+        <div class="last-polity">
+            <ul class="navs">
+                <li><a href="">social compliance</a></li>
+                <li><a href="">terms</a></li>
+                <li><a href="">privacy policy</a></li>
+            </ul>
+        </div>
+        <div class="info-about-creature">
+            <p>Site by Chopper & </p>
+        </div>
+    </div>
+</footer>
+
+<script src="scripts/bootstrap.bundle.min.js"></script>
+<script src="scripts/animationMobilMenu.js"></script>
+<script src="scripts/loader.js"></script>
+<script src="scripts/jqScroll.js"></script>
+<script src="scripts/tooltip.js"></script>
+</body>
+</html>

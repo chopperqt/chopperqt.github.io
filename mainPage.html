@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Музей искусств</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="stylesheet/fullpage.css">
+    <script src="vendors/easings.min.js"></script>
+    <script src="vendors/scrolloverflow.min.js"></script>
+    <link rel="stylesheet" href="stylesheet/fonts.css">
+    <link rel="stylesheet" href="stylesheet/menuCSS.css">
+    <link rel="stylesheet" href="stylesheet/mobilMenu.css">
+    <link rel="stylesheet" href="stylesheet/default.css">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="stylesheet/main_page.css">
+
+    <link rel="stylesheet" href="stylesheet/media.css">
+    <script src="scripts/masonry-docs.min.js"></script>
+    <script src="scripts/viewportchecker.js"></script>
+</head>
+<body>
+<header id="header">
+    <div class="nav-container">
+        <div class="nav">
+            <ul>
+                <li><a href="./mainPage.html">Главная</a></li>
+                <li><a href="./news.html">Новости</a></li>
+                <li><a href="./cashbox.html">Касса</a></li>
+                <li><a href="./arts.html">Произведения</a></li>
+                <li><a href="./job.html">Вакансии</a></li>
+                <li><a href="/about.html">О нас </a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="user-menu">
+            <div class="user-avatar" id="close__" onclick="openUserProfil()" >
+                <img src="museums_pictures/User.png" alt="user-avatar">
+                <p><i class="fas fa-angle-down"></i></p>
+            </div>
+            <div class="menu-wrap">
+                <div class="menu">
+                    <ul class="user-menu-items">
+                        <li><a href="cart.html">Моя корзина</a></li>
+                        <li><a href="#">Настройки</a></li>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Выход</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="no-user-menu">
+            <a href="login.html">Войти</a>
+        </div>
+    </div>
+    <div class="mobil_menu">
+        <div class="wrap-menu">
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="./mainPage.html">Главная</a></li>
+                    <li><a href="./news.html">Новости</a></li>
+                    <li><a href="./cashbox.html">Касса</a></li>
+                    <li><a href="./arts.html">Произведения</a></li>
+                    <li><a href="./job.html">Вакансии</a></li>
+                    <li><a href="./about.html">О нас </a></li>
+                </ul>
+            </div>
+            <button class="open-the-menu" id="close" onclick="tranformation_btn()">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </button>
+        </div>
+    </div>
+</header>
+<div id="fullpage">
+    <div class="section active" id="section0">
+        <div class="video-and-title">
+            <div class="title-header-block">
+                <div class="title-info">
+                    <h1>Музей исскуств</h1>
+                    <p>С вами с <span style="color: #80c7ba;">1841</span> года</p>
+                </div>
+            </div>
+            <div class="video-information">
+                <video data-keepplaying autoPlay="autoplay" loop="loop" muted="muted">
+                    <source src="museums_pictures/museum_video.mp4" type="video/mp4">
+                    <source src="museums_pictures/museum_video.webm" type="video/webm">
+                </video>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section1">
+        <div class="two-boss">
+            <div class="full-size-picture">
+                <img src="museums_pictures/boss3.jpg" alt="">
+            </div>
+            <div class="boos-answer">
+                <h2>МЫ УВАЖАЕМ СВОЙ ТРУД</h2>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem cumque dicta ducimus ea eum, ipsum itaque laborum magni nam nulla quia quibusdam quod voluptas voluptate! Exercitationem obcaecati sed similique?</h3>
+                <hr>
+                <p>Вадим Николаевич Задорожный <br> <span style="color: #80c7ba;text-transform: uppercase;">Директор музея</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section2">
+        <div class="information-about-top-museum">
+            <div class="full-size-picture">
+                <img src="museums_pictures/museum_picture.jpg" alt="">
+            </div>
+            <div class="main-container-two">
+                <div class="top-info">
+                    <h2>С <span>2009</span> года <br> входим в ТОП-10 лучших <br>музеев мира</h2>
+                    <button class="default_button more-info-about-top">Узнать больше</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section3">
+        <div class="about-all-arts">
+            <div class="full-size-picture">
+                <img src="museums_pictures/art2.jpg" alt="">
+            </div>
+            <div class="main-container-two">
+                <div class="all-arts-info">
+                    <h2><span>12</span> экскурсий ежедневно <br> <span>84</span> еженедельно <br> <span>90%</span> положительных отзывов </h2>
+                    <button class="default_button">Сходить на экскурсию</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section4">
+        <div class="area-zona">
+            <div class="main-fifty-container">
+                <div class="fifty-container info-container-one">
+                    <img src="museums_pictures/art.jpg" alt="">
+                    <div class="info-amount">
+                        <h2><span>90</span> <br> картин</h2>
+                    </div>
+                </div>
+                <div class="fifty-container info-container-two">
+                    <img src="museums_pictures/1.jpg" alt="">
+                    <div class="info-amount">
+                        <h2><span>60</span> <br> скульптур</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="main-fifty-container info-container-one"></div>
+        </div>
+    </div>
+    <div class="section" id="section5"><h1>test2</h1></div>
+</div>
+
+<script src="scripts/animationMobilMenu.js"></script>
+<script src="scripts/fullpage.js"></script>
+<script src="scripts/fullpage.extensions.min.js"></script>
+<script>
+    new fullpage('#fullpage', {
+        //options here
+        autoScrolling:true,
+        scrollHorizontally: true,
+        navigation: true,
+        parallax: true,
+        parallaxOptions: {type: 'reveal', percentage: 90, property: 'translate'},
+    });
+</script>
+<script src="scripts/jqScroll.js"></script>
+</body>
+</html>
