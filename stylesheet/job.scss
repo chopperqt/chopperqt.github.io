@@ -28,14 +28,14 @@ body::-webkit-scrollbar {
       width: 95%;
       h2 {
         font-size: 24px;
-        font-family: 'Spectral' , sans-serif;
+        font-family: 'SpectralRegular' , sans-serif;
         font-weight: bold;
         text-transform: uppercase;
       }
       label {
         font-size: 18px;
         color: #757575;
-        font-family: 'PT Sans Narrow' , sans-serif;
+        font-family: 'PT_SansNarrowWebRegular' , sans-serif;
         span {
           color:#03A9F4;
         }
@@ -46,7 +46,7 @@ body::-webkit-scrollbar {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        font-family: 'PT Sans Narrow' , sans-serif;
+        font-family: 'PT_SansNarrowWebRegular' , sans-serif;
         border: 1px solid #ccc;
         font-size: 18px;
         color: #000;
@@ -79,7 +79,7 @@ body::-webkit-scrollbar {
       }
     }
     .send-profile {
-      font-family: 'Spectral' , sans-serif;
+      font-family: 'SpectralRegular' , sans-serif;
       font-size: 18px;
       text-transform: uppercase;
       width: 150px;
@@ -122,7 +122,7 @@ body::-webkit-scrollbar {
         color: #212121;
       }
       li {
-        font-family: 'PT Sans Narrow' , sans-serif;
+        font-family: 'PT_SansNarrowWebRegular' , sans-serif;
         font-size: 1.6rem;
         margin: 15px 0;
         color: #757575;

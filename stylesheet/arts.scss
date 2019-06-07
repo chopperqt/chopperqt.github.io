@@ -7,7 +7,7 @@
   .video-and-title {
     height: 100%;
     .title-header-block {
-      font-family: 'Alegreya SC' , sans-serif;
+      font-family: 'AlegreyaSCRegular' , sans-serif;
       color: #fff;
       height: 85vh;
       position: absolute;
@@ -60,7 +60,7 @@
       color: #1f1f1f;
       outline: none;
       transition: .4s ease-in-out;
-      font-family: 'Spectral' , sans-serif;
+      font-family: 'SpectralRegular' , sans-serif;
       text-align: center;
       background: transparent;
     }
@@ -106,7 +106,7 @@
       margin-top: 20px;
       font-size: 20px;
       border-bottom: 1px solid #212121;
-      font-family: 'Spectral' , sans-serif;
+      font-family: 'SpectralRegular' , sans-serif;
     }
     .body-search {
       display: flex;
@@ -115,12 +115,17 @@
         display: flex;
         margin-top: 20px;
         label {
-          font-family: 'Spectral' , sans-serif;
+          font-family: 'SpectralRegular' , sans-serif;
           font-size: 16px;
-      }
-      input {
-        width: auto;
-      }
+        }
+        input {
+          width: auto;
+        }
+        a {
+          font-family: "SpectralRegular" ,sans-serif;
+          text-decoration: none;
+          color: #212121;
+        }
       }
     }
   }

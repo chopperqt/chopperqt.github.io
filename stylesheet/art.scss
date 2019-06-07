@@ -7,7 +7,7 @@
     height: 100%;
     width: 100%;
     .title-header-block {
-      font-family: 'Alegreya SC' , sans-serif;
+      font-family: 'AlegreyaSCRegular' , sans-serif;
       color: #fff;
       height: 40vh;
       position: absolute;
@@ -87,12 +87,12 @@
     p {
       margin-top: 20px;
       font-size: 24px;
-      font-family: 'Alegreya SC' , sans-serif;
+      font-family: 'AlegreyaSCRegular' , sans-serif;
 
       font-weight: 100;
       color: #757575;
       span {
-        font-family: "PT Sans Narrow" , sans-serif;
+        font-family: "PT_SansNarrowWebRegular" , sans-serif;
         font-weight: bold;
         color: #212121;
       }
@@ -106,36 +106,36 @@
     form {
       display: flex;
       label {
-        font-family: 'Spectral' , sans-serif;
+        font-family: 'SpectralRegular' , sans-serif;
         font-size: 20px;
         input {
           width: 400px;
           padding: 5px 5px;
-          font-family: 'Spectral', sans-serif;
+          font-family: 'SpectralRegular', sans-serif;
           font-size: 18px;
-          outline: black;
-          border: 1px solid black;
+          outline: #212121;
+          border: 1px solid #212121;
           border-radius: 5px;
         }
         textarea {
           width: 400px;
           padding: 5px 5px;
-          font-family: 'Spectral' , sans-serif;
+          font-family: 'SpectralRegular' , sans-serif;
           font-size: 18px;
-          outline: black;
-          border: 1px solid black;
+          outline: #212121;
+          border: 1px solid #212121;
           border-radius: 5px;
           resize: none;
         }
       }
       button {
-        font-family: 'Spectral' , sans-serif;
+        font-family: 'SpectralRegular' , sans-serif;
         font-size: 18px;
         font-weight: bold;
         text-transform: uppercase;
         width: 150px;
         background: none;
-        border: 1px solid #000;
+        border: 1px solid #212121;
         border-radius: 5px;
         padding: 7px 0;
         outline: none;
@@ -153,7 +153,7 @@
       img {
         width: 75px;
         height: 75px;
-        border: .5px solid black;
+        border: .5px solid #212121;
         border-radius: 5px;
       }
     }
@@ -166,7 +166,7 @@
   .all-commentaries-about-art {
     h2 {
       color: #212121;
-      font-family: 'Alegreya SC' , sans-serif;
+      font-family: 'AlegreyaSCRegular' , sans-serif;
     }
     i {
       font-size: 35px;
@@ -180,7 +180,7 @@
         font-size: 20px;
         text-align: center;
         margin-left: 8px;
-        font-family: 'PT Sans Narrow' ,sans-serif;
+        font-family: 'PT_SansNarrowWebRegular' ,sans-serif;
       }
     }
     .comment {
@@ -196,7 +196,7 @@
       .information-about-comment {
         margin-left: 10px;
         h3 {
-          font-family: "Spectral" , sans-serif;
+          font-family: "SpectralRegular" , sans-serif;
           font-weight: bold;
           font-size: 20px;
           color: #212121;
@@ -207,7 +207,7 @@
           }
         }
         p {
-          font-family: "PT Sans Narrow" , sans-serif;
+          font-family: "PT_SansNarrowWebRegular" , sans-serif;
           font-size: 18px;
           color: #212121;
           font-weight: 500;

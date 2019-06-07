@@ -1,5 +1,5 @@
 body {
-  font-family: 'PT Sans Narrow' , sans-serif;
+  font-family: 'PT_SansNarrowWebRegular' , sans-serif;
   font-weight: 400; }
 
 #panel {
@@ -87,7 +87,7 @@ body {
       #panel .info-panel form .all-info {
         margin-top: 20px; }
         #panel .info-panel form .all-info label {
-          font-family: 'PT Sans Narrow' , sans-serif;
+          font-family: 'PT_SansNarrowWebRegular' , sans-serif;
           font-size: 18px;
           font-weight: bold; }
         #panel .info-panel form .all-info div {
@@ -103,7 +103,7 @@ body {
           width: 200px;
           font-size: 16px;
           border: none;
-          font-family: 'PT Sans Narrow' , sans-serif;
+          font-family: 'PT_SansNarrowWebRegular' , sans-serif;
           border-bottom: 1px solid #212121;
           color: #212121;
           background: transparent;
@@ -122,7 +122,7 @@ body {
           border: 1px solid #212121;
           border-radius: 5px;
           color: #212121;
-          font-family: "PT Sans Narrow", sans-serif;
+          font-family: "PT_SansNarrowWebRegular", sans-serif;
           font-size: 18px;
           background: none;
           transition: .2s ease; }

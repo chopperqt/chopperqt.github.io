@@ -4,7 +4,7 @@
   #header_ .video-and-title {
     height: 100%; }
     #header_ .video-and-title .title-header-block {
-      font-family: 'Alegreya SC' , sans-serif;
+      font-family: 'AlegreyaSCRegular' , sans-serif;
       color: #fff;
       height: 85vh;
       position: absolute;
@@ -43,7 +43,7 @@
     #signin .main-container .login-form {
       margin-top: 10px; }
       #signin .main-container .login-form input {
-        font-family: 'PT Sans Narrow', sans-serif;
+        font-family: 'PT_SansNarrowWebRegular', sans-serif;
         min-width: 290px;
         max-width: 290px;
         font-size: 18px;
@@ -55,7 +55,7 @@
         width: 290px;
         padding: 10px 5px;
         font-size: 18px;
-        font-family: 'PT Sans Narrow' , sans-serif;
+        font-family: 'PT_SansNarrowWebRegular' , sans-serif;
         text-transform: uppercase;
         margin-top: 20px;
         border-radius: 3px;
@@ -73,7 +73,7 @@
         list-style: none;
         margin: 0 10px 0 10px; }
         #signin .main-container .login-or-sign ul li a {
-          font-family: 'PT Sans Narrow' , sans-serif;
+          font-family: 'PT_SansNarrowWebRegular' , sans-serif;
           padding: 10px 10px;
           background: rgba(251, 245, 254, 0.49);
           text-decoration: none;

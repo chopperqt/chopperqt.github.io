@@ -43,7 +43,7 @@
             background: #BDBDBD; }
           #cart-main .main-container-two .cart-wrap .cart .cart-offer .wrap-cart-offer .my-cart {
             display: flex;
-            font-family: 'PT Sans Narrow' , sans-serif;
+            font-family: 'PT_SansNarrowWebRegular' , sans-serif;
             color: #212121;
             font-size: 18px;
             margin: 20px 0; }
@@ -54,7 +54,7 @@
               display: flex; }
               #cart-main .main-container-two .cart-wrap .cart .cart-offer .wrap-cart-offer .button-cart .director-sign p {
                 color: #757575;
-                font-family: 'Spectral' , sans-serif; }
+                font-family: 'SpectralRegular' , sans-serif; }
               #cart-main .main-container-two .cart-wrap .cart .cart-offer .wrap-cart-offer .button-cart .director-sign img {
                 height: 40px;
                 margin-left: 15px; }
@@ -63,7 +63,7 @@
               border: 1px solid #757575;
               padding: 10px 15px;
               border-radius: 5px;
-              font-family: "PT Sans Narrow", sans-serif;
+              font-family: "PT_SansNarrowWebRegular", sans-serif;
               color: #757575;
               font-size: 16px;
               transition: .2s ease; }
@@ -108,7 +108,7 @@
           #cart-main .main-container-two .cart-wrap .total-amount .total-amount-wrap p span {
             color: #1f1f1f;
             font-size: 24px;
-            font-family: 'PT Sans Narrow' , sans-serif; }
+            font-family: 'PT_SansNarrowWebRegular' , sans-serif; }
         #cart-main .main-container-two .cart-wrap .total-amount .total-amount-wrap .place-your-order {
           background: #b4aa9c;
           height: 35px;
@@ -117,7 +117,7 @@
           position: absolute;
           padding: 0 0 0 10px;
           color: #fff;
-          font-family: 'Spectral' , sans-serif; }
+          font-family: 'SpectralRegular' , sans-serif; }
           #cart-main .main-container-two .cart-wrap .total-amount .total-amount-wrap .place-your-order:after {
             content: '';
             position: absolute;

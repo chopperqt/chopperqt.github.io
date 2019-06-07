@@ -56,7 +56,7 @@
         .nav-container .user-menu .menu-wrap li a {
           text-decoration: none;
           color: #757575;
-          font-family: 'PT Sans Narrow' ,sans-serif; }
+          font-family: 'PT_SansNarrowWebRegular' ,sans-serif; }
         .nav-container .user-menu .menu-wrap li:hover {
           background: #009688; }
           .nav-container .user-menu .menu-wrap li:hover a {
@@ -66,7 +66,7 @@
     position: absolute;
     right: 30px; }
     .nav-container .no-user-menu a {
-      font-family: 'PT Sans Narrow' , sans-serif;
+      font-family: 'PT_SansNarrowWebRegular' , sans-serif;
       font-weight: 700;
       text-transform: uppercase;
       font-size: 1.225em;
@@ -88,7 +88,7 @@
   padding-left: 0; }
 
 .nav ul li a {
-  font-family: 'PT Sans Narrow' , sans-serif;
+  font-family: 'PT_SansNarrowWebRegular' , sans-serif;
   font-weight: 400;
   font-size: 1.225rem;
   color: #fff;

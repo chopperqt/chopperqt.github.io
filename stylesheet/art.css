@@ -7,7 +7,7 @@
     height: 100%;
     width: 100%; }
     #header .video-and-title .title-header-block {
-      font-family: 'Alegreya SC' , sans-serif;
+      font-family: 'AlegreyaSCRegular' , sans-serif;
       color: #fff;
       height: 40vh;
       position: absolute;
@@ -61,11 +61,11 @@
     #all-information-about-art .text-block-about-art p {
       margin-top: 20px;
       font-size: 24px;
-      font-family: 'Alegreya SC' , sans-serif;
+      font-family: 'AlegreyaSCRegular' , sans-serif;
       font-weight: 100;
       color: #757575; }
       #all-information-about-art .text-block-about-art p span {
-        font-family: "PT Sans Narrow" , sans-serif;
+        font-family: "PT_SansNarrowWebRegular" , sans-serif;
         font-weight: bold;
         color: #212121; }
 
@@ -75,33 +75,33 @@
   #all-commentaries .write-your-comment form {
     display: flex; }
     #all-commentaries .write-your-comment form label {
-      font-family: 'Spectral' , sans-serif;
+      font-family: 'SpectralRegular' , sans-serif;
       font-size: 20px; }
       #all-commentaries .write-your-comment form label input {
         width: 400px;
         padding: 5px 5px;
-        font-family: 'Spectral', sans-serif;
+        font-family: 'SpectralRegular', sans-serif;
         font-size: 18px;
-        outline: black;
-        border: 1px solid black;
+        outline: #212121;
+        border: 1px solid #212121;
         border-radius: 5px; }
       #all-commentaries .write-your-comment form label textarea {
         width: 400px;
         padding: 5px 5px;
-        font-family: 'Spectral' , sans-serif;
+        font-family: 'SpectralRegular' , sans-serif;
         font-size: 18px;
-        outline: black;
-        border: 1px solid black;
+        outline: #212121;
+        border: 1px solid #212121;
         border-radius: 5px;
         resize: none; }
     #all-commentaries .write-your-comment form button {
-      font-family: 'Spectral' , sans-serif;
+      font-family: 'SpectralRegular' , sans-serif;
       font-size: 18px;
       font-weight: bold;
       text-transform: uppercase;
       width: 150px;
       background: none;
-      border: 1px solid #000;
+      border: 1px solid #212121;
       border-radius: 5px;
       padding: 7px 0;
       outline: none;
@@ -116,7 +116,7 @@
     #all-commentaries .write-your-comment .profile-image img {
       width: 75px;
       height: 75px;
-      border: .5px solid black;
+      border: .5px solid #212121;
       border-radius: 5px; }
   #all-commentaries .write-your-comment .from-comment {
     display: flex;
@@ -124,7 +124,7 @@
     align-items: flex-end; }
 #all-commentaries .all-commentaries-about-art h2 {
   color: #212121;
-  font-family: 'Alegreya SC' , sans-serif; }
+  font-family: 'AlegreyaSCRegular' , sans-serif; }
 #all-commentaries .all-commentaries-about-art i {
   font-size: 35px; }
   #all-commentaries .all-commentaries-about-art i:before {
@@ -136,7 +136,7 @@
     font-size: 20px;
     text-align: center;
     margin-left: 8px;
-    font-family: 'PT Sans Narrow' ,sans-serif; }
+    font-family: 'PT_SansNarrowWebRegular' ,sans-serif; }
 #all-commentaries .all-commentaries-about-art .comment {
   display: flex;
   margin-top: 20px; }
@@ -148,7 +148,7 @@
   #all-commentaries .all-commentaries-about-art .comment .information-about-comment {
     margin-left: 10px; }
     #all-commentaries .all-commentaries-about-art .comment .information-about-comment h3 {
-      font-family: "Spectral" , sans-serif;
+      font-family: "SpectralRegular" , sans-serif;
       font-weight: bold;
       font-size: 20px;
       color: #212121; }
@@ -157,7 +157,7 @@
         margin-left: 15px;
         color: #757575; }
     #all-commentaries .all-commentaries-about-art .comment .information-about-comment p {
-      font-family: "PT Sans Narrow" , sans-serif;
+      font-family: "PT_SansNarrowWebRegular" , sans-serif;
       font-size: 18px;
       color: #212121;
       font-weight: 500; }

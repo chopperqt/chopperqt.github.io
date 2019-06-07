@@ -37,7 +37,7 @@
           #cashbox .container .cashbox-wrap .cash .cash-text h3 {
             font-size: 24px; }
           #cashbox .container .cashbox-wrap .cash .cash-text p span {
-            font-family: 'PT Sans Narrow' , sans-serif;
+            font-family: 'PT_SansNarrowWebRegular' , sans-serif;
             font-size: 18px; }
         #cashbox .container .cashbox-wrap .cash .avatar {
           display: block;
@@ -67,7 +67,7 @@
             background: #b2dfdb;
             color: #757575;
             font-size: 18px;
-            font-family: 'PT Sans Narrow', sans-serif;
+            font-family: 'PT_SansNarrowWebRegular', sans-serif;
             margin-top: 10px; }
             #cashbox .container .cashbox-wrap .cash .cash-buttons #add-to-cart:hover {
               border: 1px solid #009688;
