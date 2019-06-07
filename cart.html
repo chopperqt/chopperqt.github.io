@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Корзина</title>
+    <link rel="stylesheet" href="stylesheet/all.css">
     <link rel="stylesheet" href="stylesheet/fonts.css">
     <link rel="stylesheet" href="stylesheet/animation.css">
     <link rel="stylesheet" href="stylesheet/animate.css">
@@ -85,7 +86,7 @@
                 <hr class="short">
             </div>
             <div class="cart">
-                <div class="cart-offer">
+                <div id="cart-offer-1" class="cart-offer">
                     <div class="wrap-cart-offer">
                         <div class="cart-offer-navigation">
                             <p class="id-cart">Билет №</p>
@@ -114,11 +115,11 @@
                                 <p>Подпись Директора:</p>
                                 <img src="museums_pictures/pushkin.png" alt="Роспись">
                             </div>
-                            <button class="delete-offer-from-cart">Убрать из корзины</button>
+                            <button onclick="btnDeleteTicketClick(1)" class="delete-offer-from-cart" id="delete-offer-from-cart-1" value="1">Убрать из корзины</button>
                         </div>
                     </div>
                 </div>
-                <div class="cart-offer">
+                <div id="cart-offer-2" class="cart-offer">
                     <div class="wrap-cart-offer">
                         <div class="cart-offer-navigation">
                             <p class="id-cart">Билет №</p>
@@ -147,7 +148,7 @@
                                 <p>Подпись Директора:</p>
                                 <img src="museums_pictures/pushkin.png" alt="Роспись">
                             </div>
-                            <button class="delete-offer-from-cart">Убрать из корзины</button>
+                            <button onclick="btnDeleteTicketClick(2)"  class="delete-offer-from-cart" id="delete-offer-from-cart-2" value="2">Убрать из корзины</button>
                         </div>
                     </div>
                 </div>
@@ -167,6 +168,7 @@
 </section>
 <!--scripts-->
 <script src="scripts/animationMobilMenu.js"></script>
+<script src="scripts/deleteCart.js"></script>
 <script src="scripts/loader.js"></script>
 </body>
 </html>
