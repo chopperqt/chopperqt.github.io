@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/simple-contact-book/static/css/main.98338ffa.chunk.css",
-    "main.js": "/simple-contact-book/static/js/main.8ebb702b.chunk.js",
-    "main.js.map": "/simple-contact-book/static/js/main.8ebb702b.chunk.js.map",
-    "runtime~main.js": "/simple-contact-book/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/simple-contact-book/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.47d01af1.chunk.js": "/simple-contact-book/static/js/2.47d01af1.chunk.js",
-    "static/js/2.47d01af1.chunk.js.map": "/simple-contact-book/static/js/2.47d01af1.chunk.js.map",
-    "index.html": "/simple-contact-book/index.html",
-    "precache-manifest.c162b9d4fbd30a79b99712acf6b41b63.js": "/simple-contact-book/precache-manifest.c162b9d4fbd30a79b99712acf6b41b63.js",
-    "service-worker.js": "/simple-contact-book/service-worker.js",
-    "static/css/main.98338ffa.chunk.css.map": "/simple-contact-book/static/css/main.98338ffa.chunk.css.map"
+    "main.css": "/simple-contacts-book/static/css/main.98338ffa.chunk.css",
+    "main.js": "/simple-contacts-book/static/js/main.8ebb702b.chunk.js",
+    "main.js.map": "/simple-contacts-book/static/js/main.8ebb702b.chunk.js.map",
+    "runtime~main.js": "/simple-contacts-book/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/simple-contacts-book/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.47d01af1.chunk.js": "/simple-contacts-book/static/js/2.47d01af1.chunk.js",
+    "static/js/2.47d01af1.chunk.js.map": "/simple-contacts-book/static/js/2.47d01af1.chunk.js.map",
+    "index.html": "/simple-contacts-book/index.html",
+    "precache-manifest.c162b9d4fbd30a79b99712acf6b41b63.js": "/simple-contacts-book/precache-manifest.c162b9d4fbd30a79b99712acf6b41b63.js",
+    "service-worker.js": "/simple-contacts-book/service-worker.js",
+    "static/css/main.98338ffa.chunk.css.map": "/simple-contacts-book/static/css/main.98338ffa.chunk.css.map"
   }
 }
