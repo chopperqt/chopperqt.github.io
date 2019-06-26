@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/simple-contacts-book/static/css/main.98338ffa.chunk.css",
+    "main.js": "/simple-contacts-book/static/js/main.8ebb702b.chunk.js",
+    "main.js.map": "/simple-contacts-book/static/js/main.8ebb702b.chunk.js.map",
+    "runtime~main.js": "/simple-contacts-book/static/js/runtime~main.36e34f17.js",
+    "runtime~main.js.map": "/simple-contacts-book/static/js/runtime~main.36e34f17.js.map",
+    "static/js/2.47d01af1.chunk.js": "/simple-contacts-book/static/js/2.47d01af1.chunk.js",
+    "static/js/2.47d01af1.chunk.js.map": "/simple-contacts-book/static/js/2.47d01af1.chunk.js.map",
+    "index.html": "/simple-contacts-book/index.html",
+    "precache-manifest.50f2735eb868b3ae909dfd895819bb8f.js": "/simple-contacts-book/precache-manifest.50f2735eb868b3ae909dfd895819bb8f.js",
+    "service-worker.js": "/simple-contacts-book/service-worker.js",
+    "static/css/main.98338ffa.chunk.css.map": "/simple-contacts-book/static/css/main.98338ffa.chunk.css.map"
+  }
+}
