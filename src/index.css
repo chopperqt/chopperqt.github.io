@@ -1,3 +1,32 @@
+@font-face {
+  font-family: 'AmsdamRegular';
+  src: url('./fonts/AmsdamRegular.eot');
+  src: url('./fonts/AmsdamRegular.eot') format('embedded-opentype'),
+       url('./fonts/AmsdamRegular.woff2') format('woff2'),
+       url('./fonts/AmsdamRegular.woff') format('woff'),
+       url('./fonts/AmsdamRegular.ttf') format('truetype'),
+       url('./fonts/AmsdamRegular.svg#AmsdamRegular') format('svg');
+}
+@font-face {
+  font-family: 'MontserratRegular';
+  src: url('./fonts/MontserratRegular.eot');
+  src: url('./fonts/MontserratRegular.eot') format('embedded-opentype'),
+       url('./fonts/MontserratRegular.woff2') format('woff2'),
+       url('./fonts/MontserratRegular.woff') format('woff'),
+       url('./fonts/MontserratRegular.ttf') format('truetype'),
+       url('./fonts/MontserratRegular.svg#MontserratRegular') format('svg');
+}
+@font-face {
+  font-family: 'CrimsonTextRegular';
+  src: url('fonts/CrimsonTextRegular.eot');
+  src: url('fonts/CrimsonTextRegular.eot') format('embedded-opentype'),
+       url('fonts/CrimsonTextRegular.woff2') format('woff2'),
+       url('fonts/CrimsonTextRegular.woff') format('woff'),
+       url('fonts/CrimsonTextRegular.ttf') format('truetype'),
+       url('fonts/CrimsonTextRegular.svg#CrimsonTextRegular') format('svg');
+}
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +34,146 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+h1,h2,h3,h4,h5,span,p {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  /* font-family: 'AmsdamRegular'; */
+  font-size: 36px;
+  color: #fff;
+  font-weight: 100;
+}
+h5 {
+  font-family: "AmsdamRegular";
+}
+h5 {
+  font-size: 16px;
+  color: #fff;
+}
+h4, .footer a {
+  font-size: 16px;
+  color: #e3e3e3;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+h4 {
+  margin-top: 30px;
+  letter-spacing: 2px;
+}
+h3 {
+  font-family: 'MontserratRegular';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+p {
+  font-family: 'CrimsonTextRegular';
+  color: #3e3d3d;
+  letter-spacing: 2px;
+}
+.footer h4:last-child {
+  margin-top: 0;
+}
+.footer p {
+  color: #949494;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 25px;
+}
+.footer p:first-child {
+  margin-top: 0;
+}
+.footer {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.container__max {
+  min-width: 100%;
+  max-width: 100%;
+  display: grid;
+  justify-items: center;
+}
+.container {
+  min-width: 1170px;
+  max-width: 1170px;
+}
+#footerBtn {
+  padding: 10px;
+  width: 135px;
+  font-family: 'MontserratRegular';
+  font-weight: bold;
+  color: #e3e3e3;
+  background:transparent;
+  border: 1px solid #464646;
+  margin-top: 20px;
+  transition: .2s;
+}
+#footerBtn:hover {
+  background: #464646;
+  transition: .2s;
+}
+.footer span {
+  color: #949494;
+  font-family: 'CrimsonTextRegular';
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* preloader */
+.preloader {
+  min-height: 700px;
+  display: grid;
+  align-items: center;
+}
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #aaa;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
 }
