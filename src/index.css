@@ -27,6 +27,26 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 
+@font-face {
+  font-family: 'VersatileBold';
+  src: url('./fonts/VersatileBold.eot');
+  src: url('./fonts/VersatileBold.eot') format('embedded-opentype'),
+       url('./fonts/VersatileBold.woff2') format('woff2'),
+       url('./fonts/VersatileBold.woff') format('woff'),
+       url('./fonts/VersatileBold.ttf') format('truetype'),
+       url('./fonts/VersatileBold.svg#VersatileBold') format('svg');
+}
+@font-face {
+  font-family: 'FreightSansProMediumRegular';
+  src: url('fonts/FreightSansProMediumRegular.eot');
+  src: url('fonts/FreightSansProMediumRegular.eot') format('embedded-opentype'),
+       url('fonts/FreightSansProMediumRegular.woff2') format('woff2'),
+       url('fonts/FreightSansProMediumRegular.woff') format('woff'),
+       url('fonts/FreightSansProMediumRegular.ttf') format('truetype'),
+       url('fonts/FreightSansProMediumRegular.svg#FreightSansProMediumRegular') format('svg');
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

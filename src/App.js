@@ -5,7 +5,9 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  useParams,
 } from 'react-router-dom';
+import {Link as LinkScroll} from 'react-scroll';
 
 class App extends Component {
   constructor(props) {
@@ -17,22 +19,37 @@ class App extends Component {
       loaded: false,
       error: false,
       scrollPos: 0,
+      scrollBtn: 0,
+      heightToScroll: 0
     }
     this.handleScroll = this.handleScroll.bind(this);
+    this.scrollToBottom = this.scrollToBottom.bind(this);
   }
+
   componentDidMount() {
-    const {scrollPos} = this.state;
+    const {scrollPos,heightToScroll} = this.state;
+    const scrollBtn_ = document.querySelectorAll('.scrollBtn')[0];
+
     setTimeout(() => {
       this.setState({result: date})
     },1000)
     window.addEventListener('scroll', this.handleScroll)
 
-
-
+    this.setState({
+      scrollBtn: scrollBtn_
+    })
   }
+
+  scrollToBottom() {
+    const {scrollPos} = this.state;
+    const header = document.querySelector('.header');
+    console.log(header.scrollTop)
+  }
+
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll)
   }
+
   handleScroll(event) {
     let scrollTop = window.scrollY;
 
@@ -41,35 +58,26 @@ class App extends Component {
     })
   }
 
-
-
   componentDidUpdate() {
-    const {scrollPos} = this.state;
-    let menu = document.querySelector("#scrollMenu");
-    let parallax = document.querySelectorAll('.header__preview')[0];
-
-    const parallaxOptions = 200;
-
-    (scrollPos > 150) ? menu.style.animation = 'opacityIn .8s forwards' : menu.style.animation = 'opacityOut .5s forwards';
-    
-    
-
-    console.log(scrollPos)
-    //parallax.style.backgroundPosition = (scrollPos < 200) ? '0 -200px' : '0 ' + ((-parallaxOptions + -scrollPos) / 2)+'px' ;
-    parallax.style.backgroundPosition = '0 '+ -scrollPos / 2+'px'; 
-    //'0 '+ (scrollPos / 5 * -1)+'px'
+    const {scrollPos,heightToScroll} = this.state;
+    const header = document.querySelector('.header__menu');
+    if (scrollPos > 60) {
+      header.id = "header__menu__scrolled";
+    }else {
+      header.id = "header__menu__scroll"
+    }
   }
 
   render() { 
     const {result, scrollPos} = this.state;
-    console.log(scrollPos)
     return (
         <div className="App">
           <Router>
-            <Header />
+            <Header scrollToBottom={this.scrollToBottom} />
             {
               (result) ? (
                 <Switch>
+                  <Route path="/:id" children={<Child />} />
                   <Route path="/contact">
                     <Contact />
                   </Route>
@@ -77,7 +85,7 @@ class App extends Component {
                     <p>about</p>
                   </Route>
                   <Route path="/">
-                    <section className="works">
+                    <section className="works" id="works">
                       <div className="container">
                         {(result) ? result.map(item => {
                           return <Work key={item.id} id={item.id} img={item.img} src={item.src} tegs={item.tegs} name={item.name} description={item.description} />
@@ -99,6 +107,14 @@ class App extends Component {
   }
 }
  
+function Child() {
+  let {id} = useParams();
+  return (
+      <div>
+          <h3>ID: {id}</h3>
+      </div>
+  )
+}
 
 
             
