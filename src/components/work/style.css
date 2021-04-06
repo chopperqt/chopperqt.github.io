@@ -1,118 +1,95 @@
 .works {
     display: grid;
     justify-items: center;
-    background: url(./materials/patern.png);
-    /* background: #e3e3e3; */
-    padding: 20px 0 85px 0;
-}
-.works .container {
-    display: grid;
-    grid-template-columns: 330px 330px 330px;
-    justify-content: space-between;
+    min-width: 100%;
+    max-width: 100%;
 }
 .work {
-    min-width: 330px;
-    max-width: 330px;
-    margin-top: 65px;
+    min-width: 100%;
+    max-width: 100%;
 }
-.work__image {
-    -webkit-box-shadow: 0px 0px 25px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 25px -8px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 25px -8px rgba(0,0,0,0.75);
-    height: auto;
+.work .container__max {
+    padding: 30px 0;
 }
-.work__image img {
-    width: 100%;
-    height: 105%;
-    display: block;
-}
-.work__title {
-    margin-top: 35px;
+.works .container__mini  {
+    display: grid;
+    justify-content: center;
 }
 .work__text {
-    margin-top: 35px;
-}
-.work__stek {
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    padding: 15px 0;
-    display: flex;
+    text-align: center;
+    display: grid;
     justify-items: center;
-    grid-gap: 10px;
 }
-#workBtn {
-    width: 135px;
-    padding: 10px 0;
-    margin-top: 35px;
-    border: 2px solid #3e3d3d;
-    background: none;
-    outline: none;
+.work__text h2 {
+    font-size: 2.7rem;
+    font-family: 'CrimsonTextRegular';
+    color: rgb(27, 27, 27);
+    margin: 10px 0 0 0;
+}
+.work__text .under__line {
+    width: 50%;
+    height: 1px;
+    background: rgb(27, 27, 27);
+    margin-bottom: 10px;
+}
+.work__text .under__line:last-child {
+    width: 30%;
+}
+.work__additinal__text {
+    text-align: center;
+}
+.work__additinal__text h3 {
+    margin: 10px 0 15px 0;
+}
+.work__additinal__text a {
+    font-size: 1.17em;
     font-family: 'MontserratRegular';
-    font-size: 14px;
     font-weight: bold;
-    transition: .2s;
-}
-#workBtn:hover {
-    transition: .2s;
-    color: #fff;
-    background: #3e3d3e;
-}
-
-
-
-#css {
-    color: #fff;
-    margin: 0;
-    padding: 0 6px;
-    background: #264de4;
-    height: 25px;
     border-radius: 50px;
+    padding: 5px 15px;
+    border: 1px solid rgb(27, 27, 27);
+    color: rgb(27, 27, 27);
+    text-decoration: none;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-transition: .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -moz-transition: .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -ms-transition: .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: .2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-#html {
-    background: #ec5d25;
+.work__additinal__text a:hover {
+    background: rgb(27, 27, 27);
     color: #fff;
-    margin: 0;
-    padding: 0 6px;
-    height: 25px;
-    border-radius: 50px;
+    transition: .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-transition: .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -moz-transition: .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -ms-transition: .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: .2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-#React {
-    background: #61dbfc;
-    color: #fff;
-    margin: 0;
-    padding: 0 6px;
-    height: 25px;
-    border-radius: 50px;
+video {
+    border-radius: 3px;
+    min-width: 700px;
+    max-width: 700px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
-#JS {
-    background: #c5b22396;
-    color: #fff;
-    margin: 0;
-    padding: 0 6px;
-    height: 25px;
-    border-radius: 50px;
+.work__video {
+    position: relative;
 }
-#React-router {
-    background: #ca4245;
-    color: #fff;
-    margin: 0;
-    padding: 0 6px;
-    height: 25px;
-    border-radius: 50px;
+.work__video__preloader img {
+    min-width: 170px;
+    max-width: 170px;
 }
-#Bitrix {
-    background: #e80016;
-    color: #fff;
-    margin: 0;
-    padding: 0 6px;
-    height: 25px;
-    border-radius: 50px;
-}
-#jQuery {
-    background: #0068b0;
-    color: #fff;
-    margin: 0;
-    padding: 0 6px;
-    height: 25px;
-    border-radius: 50px;
+.work__video__preloader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
 }

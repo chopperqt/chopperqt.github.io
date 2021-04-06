@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import './style.css';
-import {Link} from 'react-router-dom';
 import {Link as LinkScroll} from 'react-scroll';
-import Logo from './materials/logo.png';
 
-//images 
-import line from './materials/line.png';
 
 class Header extends Component {
     constructor(props) {
@@ -15,23 +11,19 @@ class Header extends Component {
 
     render() { 
         return (
-            <header className="header">
+            <header id="header" className="header">
                 <div className="container header__menu">
                     <div className="header__logo">
-                        <img src={Logo} alt=""/>
+                    <span>Chopperxx</span>
                     </div>
                     <ul>
-                        <li><Link to="/">Home</Link><div className="lineBot"></div></li>
-                        <li><Link to="/about">About</Link><div className="lineBot"></div></li>
-                        <li><Link to="/contact">Contacts</Link><div className="lineBot"></div></li>
+                        <li><LinkScroll activeClass="enable" to="header__view" spy={true} smooth={true} duration={1000}>Home<div className="lineBot"></div></LinkScroll></li>
+                        <li><LinkScroll activeClass="enable" to="work" spy={true} smooth={true} duration={1000}>Works<div className="lineBot"></div></LinkScroll></li>
+                        <li><LinkScroll activeClass="enable" to="about" spy={true} smooth={true} duration={1000}>About<div className="lineBot"></div></LinkScroll></li>
+                        <li><LinkScroll activeClass="enable" to="contacts" spy={true} smooth={true} duration={1000}>Contacts<div className="lineBot"></div></LinkScroll></li>
                     </ul>
                 </div>
-                <div className="container__max header__view">
-                    <h1>hi there!</h1>
-                    <p>My name is Ilya. I am a student  and <br/> i want to be a frontend developer</p>
-                    <LinkScroll activeClass="active" to="works" spy={true} smooth={true} duration={1000}><button onClick={this.props.scrollToBottom} className="scrollBtn"><i class="fas fa-arrow-down"></i></button></LinkScroll>
-                    
-                </div>
+                
             </header>
          );
     }

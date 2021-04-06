@@ -10,11 +10,7 @@ class Footer extends Component {
         return (
             <footer className="footer">
                 <div className="container">
-                    <ul className="socials">
-                        <a href="https://vk.com/chopperxx"><i className="fab fa-vk"></i></a>
-                        <a href=""><i className="fab fa-telegram-plane"></i></a>
-                        <a href=""><i className="fab fa-github"></i></a>
-                    </ul>
+                    <a href="vk.com/chopperxx">Chopperxx</a>
                 </div>
             </footer>
         );

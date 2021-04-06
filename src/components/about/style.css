@@ -1,0 +1,43 @@
+.about {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.about .about__picture img {
+    width: 100%;
+    height: 100%;
+}
+.about .about__text {
+    color: #fff;
+    background: url(./materials/about.png);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.about__texts h2:first-child {
+    margin-bottom: 10px;
+}
+.about .about__text .about__texts {
+    margin-top: 20px;
+    width: 90%;
+}
+.about .about__text p {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.contact__socials__about {
+
+}
+.contact__socials__about span {
+    color: #fff;
+    font-size: 2rem;
+}
+.contact__socials__about span:first-child a{
+    margin-left: 0;
+}
+.contact__socials__about span a{
+    margin: 0 10px 0 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}

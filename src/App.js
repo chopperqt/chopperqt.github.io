@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import {Header,Footer,Work,Contact} from './components/';
+import {Header,Footer,Work, About, Contact} from './components/';
 import date from './contacts/';
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  useParams,
 } from 'react-router-dom';
+import WOW from 'wowjs';
+import 'animate.css';
 import {Link as LinkScroll} from 'react-scroll';
+import 'simplebar/dist/simplebar.min.css';
+import WheelIndicator from 'wheel-indicator';
+
+
 
 class App extends Component {
   constructor(props) {
@@ -18,38 +21,67 @@ class App extends Component {
       img: new Image(),
       loaded: false,
       error: false,
-      scrollPos: 0,
-      scrollBtn: 0,
-      heightToScroll: 0
+      headerH: 0,
+      worksH: 0,
+      scrolling: '',
+      videoLoad: this.fetchVideo('http://drive.google.com/uc?export=view&id=1FOsvwwCv5qSzEhkRQ-2_rOsNmRArk4rm')
     }
     this.handleScroll = this.handleScroll.bind(this);
-    this.scrollToBottom = this.scrollToBottom.bind(this);
+    this.wheeHandle = this.wheeHandle.bind(this);
+    this.fetchVideo = this.fetchVideo.bind(this);
   }
 
-  componentDidMount() {
-    const {scrollPos,heightToScroll} = this.state;
-    const scrollBtn_ = document.querySelectorAll('.scrollBtn')[0];
 
-    setTimeout(() => {
-      this.setState({result: date})
-    },1000)
-    window.addEventListener('scroll', this.handleScroll)
+  fetchVideo(src) {
+    return new Promise(function(resoleve,reject) {
+      let video = document.createElement('video');
+      video.src = src;
 
-    this.setState({
-      scrollBtn: scrollBtn_
+      video.onload = () => resoleve(video);
+      
+      console.log(video)
     })
   }
 
-  scrollToBottom() {
-    const {scrollPos} = this.state;
-    const header = document.querySelector('.header');
-    console.log(header.scrollTop)
+
+  componentDidMount() {
+    this.setState({
+      result: date
+    })
+
+    //menu scroll
+    window.addEventListener('scroll', this.handleScroll);
+
+    new WOW.WOW({
+      live: false
+    }).init();
+
+    const indicator = new WheelIndicator({
+      elem: document.querySelector('body'),
+      callback: (e) => {
+         return this.setState({
+           scrolling: e.direction
+         })
+      },
+      preventMouse: false
+    })
+
+    this.state.videoLoad.then(
+      video => console.log(video +' Loaded!')
+    )
+
+  }
+  
+  wheeHandle(e,scroll) {
+      
   }
 
   componentWillUnmount() {
+    //menu scroll
     window.removeEventListener('scroll', this.handleScroll)
   }
 
+  //menu scroll
   handleScroll(event) {
     let scrollTop = window.scrollY;
 
@@ -59,62 +91,59 @@ class App extends Component {
   }
 
   componentDidUpdate() {
-    const {scrollPos,heightToScroll} = this.state;
+    const {scrollPos,scrolling} = this.state;
     const header = document.querySelector('.header__menu');
-    if (scrollPos > 60) {
-      header.id = "header__menu__scrolled";
+    const about_pic = document.querySelectorAll(".about__picture")[0];
+
+    
+    if (document.querySelectorAll(".enable")[0]) {
+      let active = document.querySelectorAll('.enable div')[0];
+      active.id = "active";
     }else {
-      header.id = "header__menu__scroll"
+      
     }
+
+    if (scrollPos === 0 || scrollPos === undefined) {
+      header.id = "header__menu__scroll";
+    }else {
+      if (scrolling === "up") {
+        header.id = 'header__menu__scrolled';
+      }else {
+        header.id = "header__menu__hide"
+      }
+    }
+
+    console.log(this.state.videoLoad)
   }
 
   render() { 
-    const {result, scrollPos} = this.state;
+    const {result} = this.state;
     return (
         <div className="App">
           <Router>
-            <Header scrollToBottom={this.scrollToBottom} />
+            <Header show={'on'} scrollToBottom={this.scrollToBottom} />
+            <div id="header__view" className="container__max header__view">
+                      <h1 className="animate__animated animate__fadeInDown">hi there!</h1>
+                      <p className="animate__animated animate__fadeInUp">My name is Ilya. I am a student  and <br/> i want to be a frontend developer</p>
+                      <LinkScroll activeClass="active"  to="works" spy={true} smooth={true} duration={1000}><button onClick={this.props.scrollToBottom} className="scrollBtn"><i className="fas fa-arrow-down"></i></button></LinkScroll>
+                    </div>
+            
             {
-              (result) ? (
-                <Switch>
-                  <Route path="/:id" children={<Child />} />
-                  <Route path="/contact">
-                    <Contact />
-                  </Route>
-                  <Route exact path="/about">
-                    <p>about</p>
-                  </Route>
-                  <Route path="/">
-                    <section className="works" id="works">
-                      <div className="container">
-                        {(result) ? result.map(item => {
-                          return <Work key={item.id} id={item.id} img={item.img} src={item.src} tegs={item.tegs} name={item.name} description={item.description} />
-                        }): "False"}
-                      </div>
-                    </section>
-                  </Route>
-                </Switch>
-              ) :  (
-                <div className="container__max preloader">
-                  <div class="lds-facebook"><div></div><div></div><div></div></div>
-                </div>
-              )
+              <section className="works" id="works">
+                           {(result) ? result.map(item => {
+                             return <Work key={item.id} id={item.id} img={item.img} src={item.src} tegs={item.tegs} name={item.name} description={item.description} year={item.year} />
+                           }): "False"}
+              </section>
             }
+            <About />
+            {/* <Contact /> */}
           <Footer />
         </Router>
       </div>
     );
   }
 }
- 
-function Child() {
-  let {id} = useParams();
-  return (
-      <div>
-          <h3>ID: {id}</h3>
-      </div>
-  )
-}
+
 
 
             
