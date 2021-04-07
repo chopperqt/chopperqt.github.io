@@ -20,7 +20,6 @@ class Header extends Component {
                         <li><LinkScroll activeClass="enable" to="header__view" spy={true} smooth={true} duration={1000}>Home<div className="lineBot"></div></LinkScroll></li>
                         <li><LinkScroll activeClass="enable" to="work" spy={true} smooth={true} duration={1000}>Works<div className="lineBot"></div></LinkScroll></li>
                         <li><LinkScroll activeClass="enable" to="about" spy={true} smooth={true} duration={1000}>About<div className="lineBot"></div></LinkScroll></li>
-                        <li><LinkScroll activeClass="enable" to="contacts" spy={true} smooth={true} duration={1000}>Contacts<div className="lineBot"></div></LinkScroll></li>
                     </ul>
                 </div>
                 

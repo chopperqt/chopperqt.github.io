@@ -11,7 +11,8 @@ const About = () => {
             <div className="about__text wow animate__animated animate__bounceInRight">
                 <div className="about__texts">
                     <h2>About me</h2>
-                    <p style={{fontFamily: "system-ui"}}>Свой путь в web-е я начал ещё в школе, мне стало интересно как устроены сайты. Погружаясь всё глубже и глубже я научился верстать простые одностраничные сайты-визитки, так и многостраничные, но я понял что этого мало. По этому я поставил для себя цель стать полноценным frontend-разработчиком. Что бы создавать более много задачные и функциональные сайты.</p>
+                    {/* <p style={{fontFamily: "system-ui"}}>Свой путь в web-е я начал ещё в школе, мне стало интересно как устроены сайты. Погружаясь всё глубже и глубже я научился верстать простые одностраничные сайты-визитки, так и многостраничные, но я понял что этого мало. По этому я поставил для себя цель стать полноценным frontend-разработчиком. Что бы создавать более много задачные и функциональные сайты.</p> */}
+                    <p> :) </p>
                     <h2>Contacts</h2>
                     <div className="contact__socials__about">
                         <span className="wow animate__animated animate__fadeInLeft"><a className="_fa-vk" href="https://vk.com/chopperxx"><i className="fab fa-vk _fa-vk"/></a></span>
