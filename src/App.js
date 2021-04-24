@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
-import {Header,Footer,Work, About, Contact} from './components/';
+import {
+  Header,
+  Footer,
+  Work,
+  About,
+  Contact,
+  Slider
+} from './components/';
 import date from './contacts/';
 import {
   BrowserRouter as Router,
@@ -39,7 +46,6 @@ class App extends Component {
 
       video.onload = () => resoleve(video);
       
-      console.log(video)
     })
   }
 
@@ -67,7 +73,7 @@ class App extends Component {
     })
 
     this.state.videoLoad.then(
-      video => console.log(video +' Loaded!')
+      video => {}
     )
 
   }
@@ -112,27 +118,25 @@ class App extends Component {
         header.id = "header__menu__hide"
       }
     }
-
-    console.log(this.state.videoLoad)
   }
 
   render() { 
     const {result} = this.state;
     return (
-        <div className="App">
-          <Router>
-            <Header show={'on'} scrollToBottom={this.scrollToBottom} />
+      <div className="App">
+        <Router>
+          <Header show={'on'} scrollToBottom={this.scrollToBottom} />
             <div id="header__view" className="container__max header__view">
-                      <h1 className="animate__animated animate__fadeInDown">hi there!</h1>
-                      <p className="animate__animated animate__fadeInUp">My name is Ilya. I am a student  and <br/> i want to be a frontend developer</p>
-                      <LinkScroll activeClass="active"  to="works" spy={true} smooth={true} duration={1000}><button onClick={this.props.scrollToBottom} className="scrollBtn"><i className="fas fa-arrow-down"></i></button></LinkScroll>
-                    </div>
-            
+              <h1 className="animate__animated animate__fadeInDown">hi there!</h1>
+              <p className="animate__animated animate__fadeInUp">My name is Ilya. I am a student  and <br/> i want to be a frontend developer</p>
+              <LinkScroll activeClass="active"  to="works" spy={true} smooth={true} duration={1000}><button onClick={this.props.scrollToBottom} className="scrollBtn"><i className="fas fa-arrow-down"></i></button></LinkScroll>
+            </div>
             {
               <section className="works" id="works">
-                           {(result) ? result.map(item => {
-                             return <Work key={item.id} id={item.id} img={item.img} src={item.src} tegs={item.tegs} name={item.name} description={item.description} year={item.year} />
-                           }): "False"}
+                {(result) ? result.map(item => {
+                  return <Work key={item.id} id={item.id} img={item.img} src={item.src} tegs={item.tegs} name={item.name} description={item.description} year={item.year} />
+                }): "False"}
+                <Slider />
               </section>
             }
             <About />
