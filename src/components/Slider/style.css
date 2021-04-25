@@ -1,7 +1,6 @@
 .slider {
     width: 700px;
     height: 394px;
-    margin: 40px 0;
     position: relative;
     display: flex;
     align-items: center;
@@ -104,5 +103,17 @@
     }
     100% {
         bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 999px) {
+    .slider {
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 0) and (max-width: 500px)  {
+    .slider {
+        width: 80%;
+        height: 222px;
     }
 }

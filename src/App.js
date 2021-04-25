@@ -25,6 +25,7 @@ class App extends Component {
     this.state = {
       isLoaded: false,
       result: false,
+      slide: false,
       img: new Image(),
       loaded: false,
       error: false,
@@ -52,7 +53,8 @@ class App extends Component {
 
   componentDidMount() {
     this.setState({
-      result: date
+      result: date.videoDate,
+      slide: date.sliderDate
     })
 
     //menu scroll
@@ -133,10 +135,21 @@ class App extends Component {
             </div>
             {
               <section className="works" id="works">
-                {(result) ? result.map(item => {
-                  return <Work key={item.id} id={item.id} img={item.img} src={item.src} tegs={item.tegs} name={item.name} description={item.description} year={item.year} />
-                }): "False"}
-                {/* <Slider /> */}
+                {result ? 
+                  result.map(item => 
+                    <Work 
+                      key={item.id}
+                      id={item.id} 
+                      type={item.type}
+                      img={item.img} 
+                      src={item.src} 
+                      tegs={item.tegs} 
+                      name={item.name} 
+                      description={item.description} 
+                      year={item.year} 
+                      slides={item.slides}
+                    />
+                ) : "False"}
               </section>
             }
             <About />

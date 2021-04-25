@@ -3,7 +3,22 @@ import React, {useState} from 'react'
 
 import loader from '../../templates/loader.gif';
 
-const Work = ({src,id,img,tegs,name,description,color,year}) => {
+import {
+    Slider
+} from '../../components'
+
+const Work = ({
+    src,
+    type,
+    id,
+    img,
+    tegs,
+    name,
+    slides,
+    description,
+    color,
+    year
+}) => {
     
     const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
@@ -20,15 +35,19 @@ const Work = ({src,id,img,tegs,name,description,color,year}) => {
                         <div className="under__line"></div>
                         <div className="under__line"></div>
                     </div>
-                    <div className="work__video">
-                        <div className="work__video__preloader">
-                            <img style={{opacity: isVideoLoaded ? 0 : 1}} src={loader} alt="loader" />
-                        </div>
-                        
-                        <video onLoadedData={onLoadedData} src={img} type="video/mp4" autoPlay loop muted preload="metadata">
-                            <source src={img} type="video/mp4"></source>
-                        </video>
-                    </div>
+                    {
+                        type === 'video' ? 
+                            <div className="work__video">
+                                <div className="work__video__preloader">
+                                    <img style={{opacity: isVideoLoaded ? 0 : 1}} src={loader} alt="loader" />
+                                 </div>
+                                <video onLoadedData={onLoadedData} src={img} type="video/mp4" autoPlay loop muted preload="metadata">
+                                    <source src={img} type="video/mp4"></source>
+                                </video>
+                            </div>
+                        : <Slider slides={slides} />
+                    }
+                    
                     <div className="work__additinal__text">
                         <h3><span>Tech: </span>{tegs.join(', ')}</h3>
                         <h3><span>Year:</span> {year} </h3>
