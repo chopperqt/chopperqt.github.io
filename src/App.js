@@ -136,7 +136,7 @@ class App extends Component {
                 {(result) ? result.map(item => {
                   return <Work key={item.id} id={item.id} img={item.img} src={item.src} tegs={item.tegs} name={item.name} description={item.description} year={item.year} />
                 }): "False"}
-                <Slider />
+                {/* <Slider /> */}
               </section>
             }
             <About />
